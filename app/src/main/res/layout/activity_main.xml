@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gunduzz"
+    tools:context=".MainActivity">
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/searchableSpinner"
+        android:layout_width="165dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:dropDownSelector="#9E4A4A"
+        android:foregroundTint="#9E4A4A"
+        app:SearchViewTextColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTarih"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTarih"
+        android:layout_width="184dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:text="14.10.2022"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/searchableSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/searchableSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchableSpinner"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/tvSicaklik"
+        android:layout_width="77dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="100dp"
+        android:text="41 "
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTarih" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°C"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSicaklik"
+        app:layout_constraintTop_toTopOf="@+id/tvSicaklik" />
+
+    <ImageView
+        android:id="@+id/imgHavaDurumu"
+        android:layout_width="151dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTarih"
+        app:srcCompat="@drawable/icon_10d" />
+
+    <TextView
+        android:id="@+id/tvAciklama"
+        android:layout_width="386dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="99dp"
+        android:text="GÜNEŞLİ"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgHavaDurumu"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/tvNem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Nem : %64"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAciklama" />
+</androidx.constraintlayout.widget.ConstraintLayout>
